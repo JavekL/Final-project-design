@@ -7,7 +7,7 @@
     /* CSS 规则集 1 */
     body {
         font-family: Arial, sans-serif;
-        background: linear-gradient(to right, #1b167f, #924ed1, #544ed1, #1b167f);
+        background: linear-gradient(-45deg, #1b167f, #544ed1, #924ed1, #1b167f););
         margin: 0;
         padding: 0;
     }
@@ -59,7 +59,7 @@
         top: 250px; /* 距离容器顶部50px */
         right: auto; /* 距离容器右侧20px */
         left: 30%; /* 将左侧设置为自动 */
-      	color: Orange;
+      	color: #f16745;
   }
   
     h3 {
@@ -132,13 +132,22 @@
       	background: linear-gradient(to right, #f7d5b0, #fd9593, #f7d5b0);
         z-index: -1; /* 设置堆叠顺序，确保在其他内容的上层 */
     }
+  	  .pagerect1 {
+        position: absolute;
+        top: 75;
+        left: 0;
+        width: 58%;
+        height: 850px;
+      	background-color: white;
+        z-index: -2; /* 设置堆叠顺序，确保在其他内容的上层 */
+    }
   	  .Toprect {
         position: absolute;
         top: 50;
         left: 0;
         width: 100%;
         height: 50px;
-        background-color; /* 灰色背景 */
+        background-color: ; /* 灰色背景 */
         z-index: -1; /* 设置堆叠顺序，确保在其他内容的上层 */
     }
   
@@ -163,9 +172,10 @@
     
     <main>
     <p></p>
-    <img src="my picture.png" alt="my photo" class="image1" width="1300" height="auto">
+    <img src="me" alt="my photo" class="image1" width="1300" height="auto">
     <div class="pagerect"></div>
     <div class="photorect"></div>
+    <div class="pagerect1"></div>
     <div class="Toprect"></div>
     <table>
         <!-- 这里添加您的表格内容 -->
