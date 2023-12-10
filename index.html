@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>My personal Profile Design</title>
+<style>
+    /* CSS 规则集 1 */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /*Labtop version*/
+    @media (min-width: 768px) {
+        .main-section {
+            float: left;
+            width: 70%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .sidebar {
+            float: right;
+            width: 30%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    }
+    
+    /* Mobile Version*/
+    @media (max-width: 767px) {
+        .main-section, .sidebar {
+            width: 100%;
+            padding: 10px;
+        }
+    }
+  
+    /* CSS 规则集 9 */
+    .header {
+        position: relative; /* 使标题的定位相对于该容器 */
+        height: 300px; /* 设置容器高度 */
+        background-color: #f2f2f2; /* 为了看清楚容器的范围 */
+    }
+    
+    h1 {
+        font-size: 80px;
+        position: absolute; /* 将标题的定位设置为绝对定位 */
+        top: 200px; /* 距离容器顶部50px */
+        right: auto; /* 距离容器右侧20px */
+        left: 20%; /* 将左侧设置为自动 */
+  }
+  	    
+    h2 {
+        font-size: 100px;
+        position: absolute; /* 将标题的定位设置为绝对定位 */
+        top: 250px; /* 距离容器顶部50px */
+        right: auto; /* 距离容器右侧20px */
+        left: 20%; /* 将左侧设置为自动 */
+  }
+      
+      
+    /* CSS 规则集 3 */
+    p {
+        font-size: 18px;
+        margin-bottom: 10px;
+        top: 100;
+    }
+    
+    a {
+        color: blue;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    .main-section {
+        float: left;
+        width: 70%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    .sidebar {
+        float: right;
+        width: 30%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    .content-div {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+    
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    
+    table, th, td {
+        border: 1px solid #000;
+        padding: 8px;
+    }
+  
+  
+  	.rect {
+        position: absolute;
+        top: 5;
+        left: 0;
+        width: 100%;
+        height: 500px;
+        background-color: #ccc; /* 灰色背景 */
+        z-index: -1; /* 设置堆叠顺序，确保在其他内容的上层 */
+    }
+</style>
+  
+  
+  
+  
+</head>
+<body>
+    <header>
+    <h1>Hello, I'm</h1>
+    <h2>Javek</h2>
+    </header>
+    
+    <main>
+    <p>Nice to meet you---</p> 
+		<p>I'm a UX/UI designer</p>
+    <img src="your-image.jpg" alt="您的图像" width="300" height="200">
+    <div class="rect"></div>
+    <table>
+        <!-- 这里添加您的表格内容 -->
+    </table>
+    
+    <!-- 其他内容可以在这里添加 -->
+    </main>
+    
+  
+    <aside>
+        <!-- 可选的侧边栏内容 -->
+    </aside>
+    
+    <footer>
+        <!-- 放置页脚信息，如联系方式、版权声明等 -->
+    </footer>
+
+  
+  </body>
+</html>
+
