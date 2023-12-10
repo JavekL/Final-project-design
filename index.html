@@ -7,7 +7,7 @@
     /* CSS 规则集 1 */
     body {
         font-family: Arial, sans-serif;
-        background: linear-gradient(-45deg, #1b167f, #544ed1, #924ed1, #1b167f););
+        background: linear-gradient(-45deg, #1b167f, #544ed1, #924ed1, #1b167f);
         margin: 0;
         padding: 0;
     }
@@ -45,30 +45,42 @@
     }
     
     h1 {
-        font-size: 80px;
+        font-size: 30px;
         position: absolute; /* 将标题的定位设置为绝对定位 */
-        top: 200px; /* 距离容器顶部50px */
+        top: 15%; /* 距离容器顶部50px */
         right: auto; /* 距离容器右侧20px */
-        left: 30%; /* 将左侧设置为自动 */
-      	color: white;
+        left: 18%; /* 将左侧设置为自动 */
+      	color: #9353e2;
+      	z-index: 2
   }
   	    
     h2 {
-        font-size: 100px;
+        font-size: 80px;
         position: absolute; /* 将标题的定位设置为绝对定位 */
-        top: 250px; /* 距离容器顶部50px */
+        top: 15%; /* 距离容器顶部50px */
         right: auto; /* 距离容器右侧20px */
-        left: 30%; /* 将左侧设置为自动 */
-      	color: #f16745;
+        left: 18%; /* 将左侧设置为自动 */
+      	color: black;
+      	z-index: 2
   }
   
     h3 {
+        font-size: 100px;
+        position: absolute; /* 将标题的定位设置为绝对定位 */
+        top: 19%; /* 距离容器顶部50px */
+        right: auto; /* 距离容器右侧20px */
+        left: 18%; /* 将左侧设置为自动 */
+      	color: #f16745;
+      	z-index: 2
+  }
+    h4 {
         font-size: 50px;
         position: absolute; /* 将标题的定位设置为绝对定位 */
-        top: 400px; /* 距离容器顶部50px */
+        top: 35%; /* 距离容器顶部50px */
         right: auto; /* 距离容器右侧20px */
-        left: 30%; /* 将左侧设置为自动 */
-      	color: white;
+        left: 18%; /* 将左侧设置为自动 */
+      	color: black;
+      	z-index: 2
   }
       
       
@@ -76,7 +88,11 @@
     p {
         font-size: 18px;
         margin-bottom: 10px;
-        top: 100;
+        position: absolute;
+        top: 50%; /* 调整 p 元素在 h4 底下的位置 */
+        left: 18%;
+        width: 23%; /* 设置宽度 */
+        text-align: justify; /* 对齐文本 */
     }
     
     a {
@@ -125,19 +141,28 @@
   /* 图片&模块 */
   	.pagerect {
         position: absolute;
-        top: 100;
+        top: 10%;
         left: 0;
-        width: 55%;
-        height: 800px;
-      	background: linear-gradient(to right, #f7d5b0, #fd9593, #f7d5b0);
+        width: 40%;
+        height: 70%;
+      	background: white;
         z-index: -1; /* 设置堆叠顺序，确保在其他内容的上层 */
     }
   	  .pagerect1 {
         position: absolute;
-        top: 75;
+        top: 0;
         left: 0;
-        width: 58%;
-        height: 850px;
+        width: 53.15%;
+        height: 100%;
+      	background-color: white;
+        z-index: -2; /* 设置堆叠顺序，确保在其他内容的上层 */
+    }
+   		.pagerect2 {
+        position: absolute;
+        top: 70%;
+        left: 0;
+        width: 100%;
+        height: 30%;
       	background-color: white;
         z-index: -2; /* 设置堆叠顺序，确保在其他内容的上层 */
     }
@@ -153,10 +178,18 @@
   
   	.image1 {
         position: absolute; /* 将图像的定位设置为绝对定位 */
-        top: 410; /* 图像顶部相对于父容器顶部垂直居中 */
-        left: 75%; /* 图像左侧相对于父容器左侧水平居中 */
-      	transform: translate(-50%, -50%); /* 将图像的中心点定位到父容器的中心点 */
+        top: 0; /* 图像顶部相对于父容器顶部垂直居中 */
+        right: 0; /* 图像左侧相对于父容器左侧水平居中 */
     }
+  
+  	.vertical-dashed-line {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%; /* 放置在页面中间 */
+        border-left: 2px dashed black; /* 定义虚线样式 */
+        content: "";
+  		}
 </style>
   
   
@@ -165,18 +198,21 @@
 </head>
 <body>
     <header>
-    <h1>Hello, I'm</h1>
-    <h2>Javek</h2>
-    <h3>UW GBDA Student</h3>
+    <h1>UI/UX Designer</h1>
+    <h2>Hello, I'm</h2>
+    <h3>Javek</h3>
+    <h4>UW GBDA Student</h4>
     </header>
     
     <main>
-    <p></p>
-    <img src="me" alt="my photo" class="image1" width="1300" height="auto">
+    <p>Nice to meet you, my name is Javek Liang. Currently studying at the University of Waterloo, majoring in Global Business and Digital Arts. I have a strong interest in user experience and interaction design, and am focusing on learning front-end development skills: including HTML, CSS and JavaScript. I am passionate about technological innovation and evolution, and continue to pursue learning new programming languages and technical frameworks. In my spare time, I enjoy reading novels, drawing, and enjoying outdoor hiking and photography.</p>
+    <img src="me.png" alt="my photo" class="image1" width="48%" height="70%">
     <div class="pagerect"></div>
     <div class="photorect"></div>
     <div class="pagerect1"></div>
     <div class="Toprect"></div>
+    <div class="pagerect2"></div>
+		<div class="vertical-dashed-line"></div>
     <table>
         <!-- 这里添加您的表格内容 -->
     </table>
