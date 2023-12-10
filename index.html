@@ -7,7 +7,7 @@
     /* CSS 规则集 1 */
     body {
         font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
+        background-color: white;
         margin: 0;
         padding: 0;
     }
@@ -49,7 +49,7 @@
         position: absolute; /* 将标题的定位设置为绝对定位 */
         top: 200px; /* 距离容器顶部50px */
         right: auto; /* 距离容器右侧20px */
-        left: 20%; /* 将左侧设置为自动 */
+        left: 15%; /* 将左侧设置为自动 */
   }
   	    
     h2 {
@@ -57,7 +57,15 @@
         position: absolute; /* 将标题的定位设置为绝对定位 */
         top: 250px; /* 距离容器顶部50px */
         right: auto; /* 距离容器右侧20px */
-        left: 20%; /* 将左侧设置为自动 */
+        left: 15%; /* 将左侧设置为自动 */
+  }
+  
+    h3 {
+        font-size: 50px;
+        position: absolute; /* 将标题的定位设置为绝对定位 */
+        top: 400px; /* 距离容器顶部50px */
+        right: auto; /* 距离容器右侧20px */
+        left: 15%; /* 将左侧设置为自动 */
   }
       
       
@@ -109,14 +117,31 @@
     }
   
   
-  	.rect {
+  	.photorect {
         position: absolute;
-        top: 5;
+        top: 100;
+        left: 0;
+        width: 40%;
+        height: 500px;
+        background-color: #f7d5b0; /* 灰色背景 */
+        z-index: -1; /* 设置堆叠顺序，确保在其他内容的上层 */
+    }
+  
+  	  .Toprect1 {
+        position: absolute;
+        top: 50;
         left: 0;
         width: 100%;
-        height: 500px;
-        background-color: #ccc; /* 灰色背景 */
+        height: 50px;
+        background-color: #fbfbfb; /* 灰色背景 */
         z-index: -1; /* 设置堆叠顺序，确保在其他内容的上层 */
+    }
+  
+  	.image1 {
+        position: absolute; /* 将图像的定位设置为绝对定位 */
+        top: 290; /* 图像顶部相对于父容器顶部垂直居中 */
+        left: 75%; /* 图像左侧相对于父容器左侧水平居中 */
+      	transform: translate(-50%, -50%); /* 将图像的中心点定位到父容器的中心点 */
     }
 </style>
   
@@ -128,13 +153,14 @@
     <header>
     <h1>Hello, I'm</h1>
     <h2>Javek</h2>
+    <h3>UX/UI designer</h3>
     </header>
     
     <main>
-    <p>Nice to meet you---</p> 
-		<p>I'm a UX/UI designer</p>
-    <img src="your-image.jpg" alt="您的图像" width="300" height="200">
-    <div class="rect"></div>
+    <p>Nice to meet you---</p>
+    <img src="my picture.png" alt="my photo"  class="image1" width="840" height="620">
+    <div class="photorect"></div>
+    <div class="Toprect1"></div>
     <table>
         <!-- 这里添加您的表格内容 -->
     </table>
