@@ -11,31 +11,6 @@
         margin: 0;
         padding: 0;
     }
-    
-    /*Labtop version*/
-    @media (min-width: 768px) {
-        .main-section {
-            float: left;
-            width: 70%;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        
-        .sidebar {
-            float: right;
-            width: 30%;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-    }
-    
-    /* Mobile Version*/
-    @media (max-width: 767px) {
-        .main-section, .sidebar {
-            width: 100%;
-            padding: 10px;
-        }
-    }
   
     /* CSS 规则集 9 */
     .header {
@@ -47,9 +22,9 @@
     h1 {
         font-size: 30px;
         position: absolute; /* 将标题的定位设置为绝对定位 */
-        top: 15%; /* 距离容器顶部50px */
+        top: 140px; /* 距离容器顶部50px */
         right: auto; /* 距离容器右侧20px */
-        left: 18%; /* 将左侧设置为自动 */
+        margin-left: 180px; /* 将左侧设置为自动 */
       	color: #9353e2;
       	z-index: 2
   }
@@ -57,9 +32,9 @@
     h2 {
         font-size: 80px;
         position: absolute; /* 将标题的定位设置为绝对定位 */
-        top: 15%; /* 距离容器顶部50px */
+        top: 120px; /* 距离容器顶部50px */
         right: auto; /* 距离容器右侧20px */
-        left: 18%; /* 将左侧设置为自动 */
+        margin-left: 180px; /* 将左侧设置为自动 */
       	color: black;
       	z-index: 2
   }
@@ -67,18 +42,18 @@
     h3 {
         font-size: 100px;
         position: absolute; /* 将标题的定位设置为绝对定位 */
-        top: 19%; /* 距离容器顶部50px */
+        top: 150px; /* 距离容器顶部50px */
         right: auto; /* 距离容器右侧20px */
-        left: 18%; /* 将左侧设置为自动 */
+        margin-left: 180px; /* 将左侧设置为自动 */
       	color: #f16745;
       	z-index: 2
   }
     h4 {
         font-size: 50px;
         position: absolute; /* 将标题的定位设置为绝对定位 */
-        top: 35%; /* 距离容器顶部50px */
+        top: 280px; /* 距离容器顶部50px */
         right: auto; /* 距离容器右侧20px */
-        left: 18%; /* 将左侧设置为自动 */
+        margin-left: 180px; /* 将左侧设置为自动 */
       	color: black;
       	z-index: 2
   }
@@ -89,9 +64,9 @@
         font-size: 18px;
         margin-bottom: 10px;
         position: absolute;
-        top: 50%; /* 调整 p 元素在 h4 底下的位置 */
-        left: 18%;
-        width: 23%; /* 设置宽度 */
+        top: 400px; /* 调整 p 元素在 h4 底下的位置 */
+        margin-left: 180;
+        width: 230px; /* 设置宽度 */
         text-align: justify; /* 对齐文本 */
       	color: #686868;
     }
@@ -149,83 +124,81 @@
     text-decoration: none;
     border-radius: 5px;
     margin: 10px; /* 设置按钮之间的间距 */  
+  	float: left;
+  }
 
 #contact-button {
     position: absolute;
-    top: 80%;
-    left: 80%;
+    margin-top: 630px;
+    margin-left: 1300px;
+  	float: left;
 }
 
 #about-me-button {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    margin-top: 630px;
+    margin-left: 1150px;
+  	float: left;
 }
 
 #hobbies-button {
     position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
+    margin-top: 630px;
+    margin-left: 1000px;
+  	float: left;
 }
   
   
   
   /* 图片&模块 */
-  	.pagerect {
-        position: absolute;
-        top: 10%;
-        left: 0;
-        width: 40%;
-        height: 70%;
-      	background: white;
-        z-index: -1; /* 设置堆叠顺序，确保在其他内容的上层 */
-    }
   	  .pagerect1 {
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 53.15%;
-        height: 100%;
+        margin-top: 0;
+        margin-left: 0;
+        width: 800px;
+        height: 700;
       	background-color: white;
         z-index: -2; /* 设置堆叠顺序，确保在其他内容的上层 */
+        float: left;
     }
    		.pagerect2 {
         position: absolute;
-        top: 70%;
-        left: 0;
-        width: 100%;
-        height: 30%;
+        margin-top: 550px;
+        margin-left: 0;
+        width: 1535;
+        height: 235;
       	background-color: white;
         z-index: -2; /* 设置堆叠顺序，确保在其他内容的上层 */
+        float: left;
     }
   	  .Toprect {
         position: absolute;
-        top: 50;
-        left: 0;
+        margin-top: 50;
+        margin-left: 0;
         width: 100%;
         height: 50px;
         background-color: ; /* 灰色背景 */
         z-index: -1; /* 设置堆叠顺序，确保在其他内容的上层 */
+        float: left;
     }
   
   	.image1 {
-        position: absolute; /* 将图像的定位设置为绝对定位 */
-        top: 0; /* 图像顶部相对于父容器顶部垂直居中 */
-        right: 0; /* 图像左侧相对于父容器左侧水平居中 */
+        position: absolute; 
+        top: 0; 
+        margin-left: 800;
+      	float: left;
     }
   
   	.vertical-dashed-line {
         position: absolute;
         top: 0;
         bottom: 0;
-        left: 50%; /* 放置在页面中间 */
+        margin-left: 700; /* 放置在页面中间 */
         border-left: 2px dashed #614992; /* 定义虚线样式 */
         content: "";
+      	float: left;
   		}
 </style>
-  
   
   
   
@@ -245,13 +218,19 @@
       user experience and front-end development and enjoy 
       exploring new technologies. In my spare time, I enjoy 
       reading, painting, outdoor hiking and photography.</p>
-    <img src="me.png" alt="my photo" class="image1" width="49.5%" height="70%">
+      
+    <h5 style="float: left; position: absolute; text-align:center; margin-top: 530px; margin-left: 780px; color: purple; z-index: 1; font-size: 26px; font-family: 'Montserrat', sans-serif; width: 700px;">
+      "When you stride forward with determination, 
+        the radiance of your dreams will guide your way."</h5>
+      
+    <img src="me.png" alt="my photo" class="image1" width="765px" height="555">
     <div class="pagerect"></div>
     <div class="photorect"></div>
     <div class="pagerect1"></div>
     <div class="Toprect"></div>
     <div class="pagerect2"></div>
 		<div class="vertical-dashed-line"></div>
+      
     <table>
 		<a href="#contact" class="section-button" id="contact-button">Contact</a>
 		<a href="#about-me" class="section-button" id="about-me-button">About Me</a>
