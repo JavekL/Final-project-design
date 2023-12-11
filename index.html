@@ -136,6 +136,39 @@
         padding: 8px;
     }
   
+
+/* Button */
+.section-button {
+    display: block;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #9353e2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px; /* 设置按钮之间的间距 */  
+
+#contact-button {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+}
+
+#about-me-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#hobbies-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+}
   
   
   
@@ -206,20 +239,13 @@
     </header>
     
     <main>
-    <p>Nice to meet you, I'm Javek Liang. 
-      Currently, I am studying Global Business and 
-      Digital Arts at the University of Waterloo. 
-      I have a strong interest in user experience 
-      and interaction design, and I'm actively 
-      focusing on learning front-end development 
-      skills, including HTML, CSS, and JavaScript. 
-      I am passionate about technological innovation 
-      and evolution, continuously striving to learn 
-      new programming languages and technology frameworks. 
-      During my leisure time, I enjoy reading novels, drawing, 
-      and relishing the pleasures of outdoor hiking 
-      and photography</p>
-    <img src="me.png" alt="my photo" class="image1" width="48%" height="70%">
+    <p>"Hello, my name is Javek Liang. I am studying 
+      at the University of Waterloo, majoring in Global 
+      Business and Digital Arts. I am passionate about 
+      user experience and front-end development and enjoy 
+      exploring new technologies. In my spare time, I enjoy 
+      reading, painting, outdoor hiking and photography.</p>
+    <img src="me.png" alt="my photo" class="image1" width="49.5%" height="70%">
     <div class="pagerect"></div>
     <div class="photorect"></div>
     <div class="pagerect1"></div>
@@ -227,7 +253,10 @@
     <div class="pagerect2"></div>
 		<div class="vertical-dashed-line"></div>
     <table>
-        <!-- 这里添加您的表格内容 -->
+		<a href="#contact" class="section-button" id="contact-button">Contact</a>
+		<a href="#about-me" class="section-button" id="about-me-button">About Me</a>
+		<a href="#hobbies" class="section-button" id="hobbies-button">Hobbies</a>
+
     </table>
     
     <!-- 其他内容可以在这里添加 -->
