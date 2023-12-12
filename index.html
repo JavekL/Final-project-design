@@ -10,6 +10,7 @@
         background: linear-gradient(-45deg, #1b167f, #544ed1, #924ed1, #1b167f);
         margin: 0;
         padding: 0;
+      	max-width: 1000px;
     }
   
     /* CSS 规则集 9 */
@@ -22,9 +23,9 @@
     h1 {
         font-size: 30px;
         position: absolute; /* 将标题的定位设置为绝对定位 */
-        top: 140px; /* 距离容器顶部50px */
+        top: 130px; /* 距离容器顶部50px */
         right: auto; /* 距离容器右侧20px */
-        margin-left: 180px; /* 将左侧设置为自动 */
+        margin-left: 125px; /* 将左侧设置为自动 */
       	color: #9353e2;
       	z-index: 2
   }
@@ -34,7 +35,7 @@
         position: absolute; /* 将标题的定位设置为绝对定位 */
         top: 120px; /* 距离容器顶部50px */
         right: auto; /* 距离容器右侧20px */
-        margin-left: 180px; /* 将左侧设置为自动 */
+        margin-left: 150px; /* 将左侧设置为自动 */
       	color: black;
       	z-index: 2
   }
@@ -44,7 +45,7 @@
         position: absolute; /* 将标题的定位设置为绝对定位 */
         top: 150px; /* 距离容器顶部50px */
         right: auto; /* 距离容器右侧20px */
-        margin-left: 180px; /* 将左侧设置为自动 */
+        margin-left: 150px; /* 将左侧设置为自动 */
       	color: #f16745;
       	z-index: 2
   }
@@ -53,7 +54,7 @@
         position: absolute; /* 将标题的定位设置为绝对定位 */
         top: 280px; /* 距离容器顶部50px */
         right: auto; /* 距离容器右侧20px */
-        margin-left: 180px; /* 将左侧设置为自动 */
+        margin-left: 150px; /* 将左侧设置为自动 */
       	color: black;
       	z-index: 2
   }
@@ -65,8 +66,8 @@
         margin-bottom: 10px;
         position: absolute;
         top: 400px; /* 调整 p 元素在 h4 底下的位置 */
-        margin-left: 180;
-        width: 230px; /* 设置宽度 */
+        margin-left: 150;
+        width: 400px; /* 设置宽度 */
         text-align: justify; /* 对齐文本 */
       	color: #686868;
     }
@@ -80,25 +81,6 @@
         text-decoration: underline;
     }
     
-    .main-section {
-        float: left;
-        width: 70%;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-    
-    .sidebar {
-        float: right;
-        width: 30%;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-    
-    .content-div {
-        margin-bottom: 20px;
-        padding: 10px;
-        border: 1px solid #ccc;
-    }
     
     table {
         border-collapse: collapse;
@@ -185,7 +167,7 @@
   	.image1 {
         position: absolute; 
         top: 0; 
-        margin-left: 800;
+        margin-left: 770;
       	float: left;
     }
   
@@ -194,15 +176,13 @@
         top: 0;
         bottom: 0;
         margin-left: 700; /* 放置在页面中间 */
-        border-left: 2px dashed #614992; /* 定义虚线样式 */
+        border-left: 3px dashed #614992; /* 定义虚线样式 */
         content: "";
       	float: left;
   		}
-</style>
-  
-  
-  
+</style> 
 </head>
+
 <body>
     <header>
     <h1>UI/UX Designer</h1>
@@ -211,7 +191,6 @@
     <h4>UW GBDA Student</h4>
     </header>
     
-    <main>
     <p>"Hello, my name is Javek Liang. I am studying 
       at the University of Waterloo, majoring in Global 
       Business and Digital Arts. I am passionate about 
@@ -219,11 +198,11 @@
       exploring new technologies. In my spare time, I enjoy 
       reading, painting, outdoor hiking and photography.</p>
       
-    <h5 style="float: left; position: absolute; text-align:center; margin-top: 530px; margin-left: 780px; color: purple; z-index: 1; font-size: 26px; font-family: 'Montserrat', sans-serif; width: 700px;">
+    <h5 style="float: left; position: absolute; text-align:center; margin-top: 550px; margin-left: 780px; color: purple; z-index: 1; font-size: 26px; font-family: 'Montserrat', sans-serif; width: 700px;">
       "When you stride forward with determination, 
         the radiance of your dreams will guide your way."</h5>
       
-    <img src="me.png" alt="my photo" class="image1" width="765px" height="555">
+    <img src="me.jpg" alt="my photo" class="image1" width="765px" height="555">
     <div class="pagerect"></div>
     <div class="photorect"></div>
     <div class="pagerect1"></div>
@@ -235,22 +214,7 @@
 		<a href="#contact" class="section-button" id="contact-button">Contact</a>
 		<a href="#about-me" class="section-button" id="about-me-button">About Me</a>
 		<a href="#hobbies" class="section-button" id="hobbies-button">Hobbies</a>
-
     </table>
-    
-    <!-- 其他内容可以在这里添加 -->
-    </main>
-    
-  
-    <aside>
-        <!-- 可选的侧边栏内容 -->
-    </aside>
-    
-    <footer>
-        <!-- 放置页脚信息，如联系方式、版权声明等 -->
-    </footer>
-
-  
   </body>
 </html>
 
